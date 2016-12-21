@@ -5,14 +5,15 @@ ESlint shareable config for Vue support in javaScript standard style.
 ## Install
 
 ```
-    npm i eslint-config-impression eslint-plugin-babel eslint-plugin-flow-vars eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+    npm i eslint-config-vue-impression --save-dev
 ```
 
 ## Examples
 
+.babelrc
 ```javascript
     module.exports = {
-        "extends": "impression",
+        "extends": "vue-impression",
         "rules": {
             ...
         }

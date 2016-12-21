@@ -1,10 +1,12 @@
 {
   "name": "eslint-config-vue-impression",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ESlint shareable config for Vue support in javaScript standard style.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "prepublish": "npm config set registry http://registry.npmjs.org",
+    "postpublish": "npm config set registry https://registry.npm.taobao.org/"
   },
   "repository": {
     "type": "git",
@@ -26,12 +28,12 @@
   "homepage": "https://github.com/NewDadaFE/eslint-config-vue-impression",
   "peerDependencies": {
     "eslint": "^3.10.2",
-    "eslint-config-airbnb-base": "^10.0.1",
-    "eslint-import-resolver-webpack": "^0.7.0",
-    "eslint-plugin-html": "^1.7.0",
-    "eslint-plugin-import": "^2.2.0"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^10.0.1"
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eslint-import-resolver-webpack": "^0.7.0",
+    "eslint-plugin-html": "^1.7.0",
+    "eslint-plugin-import": "^2.2.0",
   }
 }
