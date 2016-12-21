@@ -9,14 +9,6 @@ module.exports = {
     plugins: [
         'html'
     ],
-    // check if imports actually resolve
-    'settings': {
-        'import/resolver': {
-            'webpack': {
-                'config': 'webpack.dev.config.js'
-            }
-        }
-    },
     // add your custom rules here
     'rules': {
         indent: [2, 4, { SwitchCase: 1}],
