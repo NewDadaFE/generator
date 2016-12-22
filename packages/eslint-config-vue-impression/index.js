@@ -43,7 +43,17 @@ module.exports = {
         'handle-callback-err': [2, '^(err|error)$'],
         'indent': [2, 4, { 'SwitchCase': 4 }],
         'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
-        'keyword-spacing': [2, { 'before': true, 'after': true }],
+        'keyword-spacing': ['error', {
+            before: true,
+            after: true,
+            overrides: {
+                if: { after: false },
+                while: { after: false },
+                return: { after: true },
+                throw: { after: true },
+                case: { after: true },
+            },
+        }],
         'new-cap': [2, { 'newIsCap': true, 'capIsNew': false }],
         'new-parens': 2,
         'no-array-constructor': 2,
@@ -127,8 +137,14 @@ module.exports = {
         'no-whitespace-before-property': 2,
         'no-with': 2,
         'object-property-newline': [2, { 'allowMultiplePropertiesPerLine': true }],
-        'one-var': [2, { 'initialized': 'never' }],
-        'operator-linebreak': [2, 'after', { 'overrides': { '?': 'before', ':': 'before' } }],
+        'one-var': ['warn', 'always'],
+        'one-var-declaration-per-line': ['error', 'always'],
+        'operator-linebreak': ['error', 'after', {
+            'overrides': {
+                '?': 'before',
+                ':': 'before'
+            },
+        }],
         'padded-blocks': [2, 'never'],
         'quotes': [2, 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
         'rest-spread-spacing': [2, 'never'],
