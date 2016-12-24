@@ -44,7 +44,7 @@ module.exports = {
         'eqeqeq': [2, 'allow-null'],
         'func-call-spacing': [2, 'never'],
         'handle-callback-err': [2, '^(err|error)$'],
-        'indent': [2, 4, { 'SwitchCase': 4 }],
+        'indent': [2, 4, { 'SwitchCase': 1 }],
         'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
         'keyword-spacing': ['error', {
             before: true,
@@ -54,6 +54,7 @@ module.exports = {
                 while: { after: false },
                 return: { after: true },
                 throw: { after: true },
+                switch: { after: false },
                 case: { after: true },
             },
         }],
@@ -140,12 +141,16 @@ module.exports = {
         'no-whitespace-before-property': 2,
         'no-with': 2,
         'object-property-newline': [2, { 'allowMultiplePropertiesPerLine': true }],
-        'one-var': ['warn', 'always'],
+        'one-var': [0],
         'one-var-declaration-per-line': ['error', 'always'],
         'operator-linebreak': ['error', 'after', {
             'overrides': {
                 '?': 'before',
-                ':': 'before'
+                ':': 'before',
+                '>=': 'before',
+                '===': 'before',
+                '-': 'before',
+                '+': 'before',
             },
         }],
         'padded-blocks': [2, 'never'],

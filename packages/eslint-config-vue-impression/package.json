@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-impression",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESlint shareable config for Vue support in javaScript standard style.",
   "main": "index.js",
   "scripts": {
