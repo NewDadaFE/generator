@@ -1,3 +1,6 @@
+const inProduction = process.env.NODE_ENV === 'production';
+
+
 module.exports = {
     parserOptions: {
         ecmaVersion: 8,
@@ -169,6 +172,8 @@ module.exports = {
         'standard/computed-property-even-spacing': [2, 'even'],
 
         'promise/param-names': 2,
+        'no-debugger': inProduction ? 2 : 0,
+        'no-console': inProduction ? 2 : 0,
     },
 };
 
