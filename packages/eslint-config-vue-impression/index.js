@@ -20,12 +20,29 @@ module.exports = {
         'standard',
         'promise',
         'html',
+        'import',
     ],
 
     globals: {
         document: false,
         navigator: false,
         window: false,
+    },
+
+    settings: {
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.json']
+            }
+        },
+        'import/extensions': [
+            '.js',
+            '.vue',
+        ],
+        'import/ignore': [
+            'node_modules',
+            '\\.(coffee|scss|css|less|hbs|svg|json)$',
+        ],
     },
 
     rules: {
@@ -179,6 +196,14 @@ module.exports = {
         'promise/param-names': 2,
         'no-debugger': inProduction ? 2 : 0,
         'no-console': inProduction ? 2 : 0,
+
+        'import/first': [2],
+        'import/no-duplicates': [2],
+        'import/order': [2, {'groups': ['builtin', 'external',  'index', 'sibling', 'internal', 'parent']}],
+        'import/newline-after-import': [2],
+        'import/no-amd': [2],
+        'import/no-commonjs': [2],
+        "import/no-extraneous-dependencies": [2, {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
     },
 };
 
