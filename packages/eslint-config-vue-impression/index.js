@@ -29,6 +29,9 @@ module.exports = {
     },
 
     settings: {
+        "html/indent": "tab",
+        "html/report-bad-indent": 2,
+        "html/xml-mode": true,
         'import/resolver': {
             node: {
                 extensions: ['.js', '.json']
