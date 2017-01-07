@@ -26,12 +26,11 @@ module.exports = {
         document: false,
         navigator: false,
         window: false,
+        requestAnimationFrame: false,
+        location: false,
     },
 
     settings: {
-        "html/indent": "tab",
-        "html/report-bad-indent": 2,
-        "html/xml-mode": true,
         'import/resolver': {
             node: {
                 extensions: ['.js', '.json']
@@ -132,7 +131,7 @@ module.exports = {
         'no-new': 0,
         'no-octal-escape': 2,
         'no-octal': 2,
-        'no-param-reassign': [2, { 'props': false }],
+        'no-param-reassign': [0, { 'props': false }],
         'no-proto': 2,
         'no-redeclare': 2,
         'no-return-assign': [2, 'except-parens'],
@@ -273,7 +272,7 @@ module.exports = {
         'no-tabs': 2,
         'no-ternary': 0,
         'no-trailing-spaces': 2,
-        'no-underscore-dangle': [1, { allowAfterThis: true, allowAfterSuper: true }],
+        'no-underscore-dangle': [0, { allowAfterThis: true, allowAfterSuper: true }],
         'no-unneeded-ternary': [2, { 'defaultAssignment': false }],
         'no-whitespace-before-property': 2,
         'object-curly-newline': [0, {
