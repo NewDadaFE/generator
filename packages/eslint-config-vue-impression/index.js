@@ -28,6 +28,7 @@ module.exports = {
         window: false,
         requestAnimationFrame: false,
         location: false,
+        fetch: false,
     },
 
     settings: {
