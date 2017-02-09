@@ -310,7 +310,7 @@ module.exports = {
         'spaced-comment': [2, 'always', { 'line': { 'markers': ['*package', '!', ','] }, 'block': { 'balanced': true, 'markers': ['*package', '!', ','], 'exceptions': ['*'] } }],
         'unicode-bom': [2, 'never'],
         // == ECMAScript 6
-        'arrow-body-style': [1, 'as-needed', { 'requireReturnForObjectLiteral': true }],
+        'arrow-body-style': [0, 'as-needed', { 'requireReturnForObjectLiteral': true }],
         'arrow-parens': [2, 'as-needed', { 'requireForBlockBody': false }],
         'arrow-spacing': [2, { 'before': true, 'after': true }],
         'constructor-super': 2,
