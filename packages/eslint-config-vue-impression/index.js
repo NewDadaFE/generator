@@ -18,7 +18,6 @@ module.exports = {
     plugins: [
         'standard',
         'promise',
-        'html',
         'import',
     ],
 
@@ -376,4 +375,3 @@ module.exports = {
         'import/no-extraneous-dependencies': [2, {'devDependencies': false, 'optionalDependencies': false, 'peerDependencies': false}],
     },
 };
-
