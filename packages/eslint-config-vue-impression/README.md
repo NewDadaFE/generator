@@ -1,21 +1,21 @@
 # eslint-config-vue-impression
 
-ESlint shareable config for Vue support in javaScript standard style.
+[style-guide](https://github.com/NewDadaFE/style-guide)
+
+ESLint shareable config for Vue support.
 
 ## Install
 
-```
-    npm i eslint-config-vue-impression --save-dev
+```sh
+yarn add -D eslint-config-vue-impression babel-eslint@~8.2.3 eslint@~4.18.0 eslint-config-standard@~11.0.0 eslint-plugin-import@~2.8.0 eslint-plugin-node@~5.2.1 eslint-plugin-promise@~3.6.0 eslint-plugin-standard@~3.0.1 eslint-plugin-vue@~4.5.0
 ```
 
-## Examples
+## Usage
 
-.babelrc
-```javascript
-    module.exports = {
-        "extends": "vue-impression",
-        "rules": {
-            ...
-        }
-    };
+Add a file called .babelrc to the project root:
+
+```json
+{
+  "extends": "vue-impression"
+}
 ```

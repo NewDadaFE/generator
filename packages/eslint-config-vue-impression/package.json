@@ -2,10 +2,13 @@
   "name": "eslint-config-vue-impression",
   "version": "2.1.6",
   "description": "ESlint shareable config for Vue support in javaScript standard style.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NewDadaFE/eslint-config-vue-impression"
+  "repository": "NewDadaFE/eslint-config-vue-impression",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "bugs": {
+    "url": "https://github.com/NewDadaFE/eslint-config-vue-impression/issues"
   },
   "keywords": [
     "eslint",
@@ -15,18 +18,14 @@
     "javascript",
     "eslintconfig"
   ],
-  "author": "NewDadaFE",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NewDadaFE/eslint-config-vue-impression/issues"
-  },
-  "homepage": "https://github.com/NewDadaFE/eslint-config-vue-impression",
   "peerDependencies": {
-    "eslint": "^3.10.2 || ^4.3.0"
-  },
-  "dependencies": {
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1"
+    "babel-eslint": "~8.2.3",
+    "eslint": "~4.18.0",
+    "eslint-config-standard": "~11.0.0",
+    "eslint-plugin-import": "~2.8.0",
+    "eslint-plugin-node": "~5.2.1",
+    "eslint-plugin-promise": "~3.6.0",
+    "eslint-plugin-standard": "~3.0.1",
+    "eslint-plugin-vue": "~4.5.0"
   }
 }
