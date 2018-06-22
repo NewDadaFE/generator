@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-impression",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "ESlint shareable config for Vue support in javaScript standard style.",
   "repository": "NewDadaFE/eslint-config-vue-impression",
   "license": "MIT",
