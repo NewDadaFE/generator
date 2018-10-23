@@ -21,7 +21,7 @@ const paths = {
 
 const names = {
   media: 'static/media/[name].[hash:8].[ext]',
-  css: 'static/css/[name].css',
+  css: 'static/css/[name].[contenthash:8].css',
   js: 'static/js/[name].[chunkhash:8].js',
 }
 
