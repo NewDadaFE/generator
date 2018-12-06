@@ -10,4 +10,4 @@
 yarn start
 ```
 
-更多使用方法参考[generator-react-impression](https://github.com/NewDadaFE/generator)
+更多使用方法参考[generator-react-impression](https://github.com/NewDadaFE/generator/tree/master/packages/generator-react-impression)
