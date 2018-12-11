@@ -1,6 +1,6 @@
 # generator
 
-> Quick start for new project.
+> 快速创建新项目
 
 ### React
 
