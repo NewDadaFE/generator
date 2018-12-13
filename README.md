@@ -1,4 +1,4 @@
-# generator-react-impression
+# generator
 
 > React + Redux + React Router + React Impression + Webpack
 
