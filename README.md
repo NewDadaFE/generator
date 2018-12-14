@@ -1,3 +1,5 @@
+已废弃，并入[react-impression](https://github.com/NewDadaFE/react-impression)
+
 # generator
 
 > React + Redux + React Router + React Impression + Webpack
